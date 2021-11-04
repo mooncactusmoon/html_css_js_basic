@@ -1,3 +1,17 @@
+const user1={
+    name : "K",
+    level : 2,
+}
+const myArr= [1,2,3,4];
+console.log(myArr);
+console.log(typeof(myArr));
+
+const b={
+    arr1: [1,2,3],
+    arr2: [5,7]
+}
+console.log(b);
+
 console.log(typeof({}));
 const myObject = {
     name : "amy",
