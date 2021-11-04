@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            /* 沒給height高度的話會抓原本col的高度 */
+            /* 當我們做float 就會抓不到col的高度 高度為0 */
+            width: 960px;
+            background-color: rgb(192, 231, 233);
+            margin: 0 auto;
+            /* height: 500px; */
+        }
+        .col{
+            width:300px;
+            height: 200px;
+            background-color: cornflowerblue;
+            margin: 10px;
+            float: left;
+        }
+        .clear-fix{
+            /* 父層時 container的高度 這邊拉開 */
+            clear:both;
+            height:10px;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h2>Float</h2>
+    <p>test</p>
+    <div class="container">
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facere!</div>
+        <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi placeat dolore?
+            Nesciunt nihil perferendis aliquam natus architecto saepe corporis.
+        </div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus a excepturi cupiditate
+            laboriosam in distinctio qui rem ipsum est nam, non quod ut aperiam quidem quos, mollitia, expedita
+            perferendis?
+        </div>
+        <div class="clear-fix">OWO</div>
+    </div>
+</body>
+
+</html>

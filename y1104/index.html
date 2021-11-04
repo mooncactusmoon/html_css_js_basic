@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: Microsoft JhengHei;
+            font-weight: 600;
+        }
+        table{
+            width: 450px;   
+            margin: auto;
+            border-collapse:collapse;
+
+        }
+        .td1{
+           color: rgb(119, 27, 27); 
+           background-color: rgb(206, 236, 255);
+        }
+        td{
+            border-color:rgb(22, 152, 240);
+            padding: 5px;
+            color:rgb(89, 21, 214);
+        }
+        input{
+            color:rgb(119, 27, 27);
+        }
+        #t1,#t2,#t3,#t4{
+            color:crimson;
+            font-weight: 800;
+        }
+        td:not(.td1):hover{
+            background-color: rgb(221, 244, 255);
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="myForm">
+    <table border="1px">
+        <tr>
+            <td colspan="4" class="td1">OOXX飲料店</td>
+            
+        </tr>
+        <tr >
+            <td class="td1">品項</td>
+            <td class="td1">價錢</td>
+            <td class="td1">數量</td>
+            <td class="td1">總價</td>
+        </tr>
+        <tr>
+            <td><label for="num1ID"><p id="name1"></p></label></td>
+            <td><label for="num1ID"><p id="price1"></p></label></td>
+            <td><input type="number" name="num1" id="num1ID" value="0"></td>
+            <td><p id="t1">0</p></td>
+        </tr>
+        <tr>
+            <td><label for="num2ID"><p id="name2"></p></label></td>
+            <td><label for="num2ID"><p id="price2"></p></label></td>
+            <td><input type="number" name="num2" id="num2ID" value="0"></td>
+            <td><p id="t2">0</p></td>
+        </tr>
+        <tr>
+            <td><label for="num3ID"><p id="name3"></p></label></td>
+            <td><label for="num3ID"><p id="price3"></p></label></td>
+            <td><input type="number" name="num3" id="num3ID" value="0"></td>
+            <td><p id="t3">0</p></td>
+        </tr>
+        <tr>
+            <td><label for="num4ID"><p id="name4"></p></label></td>
+            <td><label for="num4ID"><p id="price4"></p></label></td>
+            <td><input type="number" name="num4" id="num4ID" value="0"></td>
+            <td><p id="t4">0</p></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" name="submit" id="result" value="按我試算"></td>
+            <td colspan="2"><p id="allt">Total : ___ 元</p></td>
+        </tr>
+    </table></form>
+    
+    <script src="02.js"></script>
+</body>
+</html>

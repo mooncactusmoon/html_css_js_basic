@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲料練習</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: Microsoft JhengHei;
+            font-weight: 600;
+        }
+        table{
+            width: 500px;   
+            margin: auto;
+        }
+        td{
+            border-color:rgb(255, 238, 126);
+            padding: 5px;
+            color:rgb(95, 21, 21);
+        }
+    </style>
+</head>
+<body>
+<form action="" id="myForm">
+<table border="1px" >
+    <tr>
+        <td colspan="4" style="background-color: rgb(255, 236, 210);"><b>來口涼的飲料店</b></td>
+    </tr>
+    <tr>
+        <td>品項</td>
+        <td>單價</td>
+        <td>數量</td>
+        <td>總價</td>
+    </tr>
+    <tr>
+        <td><label for="redID">1.紅茶</label></td>
+        <td>30</td>
+        <td><input type="text" name="red" id="redID" value="0"></td>
+        <td><p id="r">0</p></td>
+    </tr>
+    <tr>
+        <td><label for="greenID">2.綠茶</label></td>
+        <td>35</td>
+        <td><input type="text" name="green" id="greenID" value="0"></td>
+        <td><p id="g">0</p></td>
+    </tr>
+    <tr>
+        <td><label for="milkteaID">3.奶茶</label></td>
+        <td>50</td>
+        <td><input type="text" name="milktea" id="milkteaID" value="0"></td>
+        <td><p id="m">0</p></td>
+    </tr>
+    <tr>
+        <td><label for="coffeeID">4.咖啡</label></td>
+        <td>60</td>
+        <td><input type="text" name="coffee" id="coffeeID" value="0"></td>
+        <td><p id="c">0</p></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" name="submit" id="result" value="按我試算"></td>
+        <td colspan="2"><p id="t">Total : ___ 元</p></td>
+    </tr>
+</table></form>
+
+<script src="02.js"></script>
+</body>
+</html>

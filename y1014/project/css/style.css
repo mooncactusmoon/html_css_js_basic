@@ -1,0 +1,140 @@
+/* Global Style */
+
+html {
+    background-color: #60a6b5;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 87%;
+    /* 16px 87%  13.92px 14px */
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding-left: 3em;
+    padding-right: 3em;
+    /* em 14px x3 42px */
+}
+
+.header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    /* h1正常為200% 16px 1.65 23px */
+    color: pink;
+}
+
+.header-title {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+.header-slogan {
+    margin: 0;
+}
+
+.nav {
+    margin:0;
+}
+
+/* 第一組 ul */
+.nav-list{
+    display:flex;
+    margin:0;
+    padding:0;
+}
+/* 第一組 ul li */
+.nav-list-item{
+    list-style-type:none;
+    margin-right: 15px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border: 2px solid #e5e9dc;
+}
+
+.nav-list-item:hover{
+    background-color: lightskyblue;
+
+    /* padding: 10px 10px;
+    text-transform: uppercase;
+    border: 2px solid #e5e9dc;
+    margin-right: 10px; */
+
+}
+/* 滑鼠滑到.nav-list-item顯示出.nav-sublist */
+.nav-list-item:hover .nav-sublist{
+    display: block;
+    background-color: #778899;
+}
+.nav-list-item-link{
+    text-decoration: none;
+    color:#778899;
+    text-align:center;
+    /* padding: 10px 10px;
+    text-transform: uppercase;
+    border: 2px solid #e5e9dc;
+    margin-right: 10px; */
+}
+
+/* 第2組 ul none */
+.nav-sublist{
+    display: none;
+    margin: 10px 0 0 -10px;
+    padding: 10px;
+    position:absolute;
+}
+.nav-sublist-item{
+    list-style-type:none;
+    padding:10px;
+    margin-bottom: 10px;
+    background-color: rgb(208, 232, 251);
+}
+.nav-list-item-link{
+    text-decoration:none;
+    color:lightslategray;
+    text-align:center;
+
+}
+.nav-list-item-link:hover{
+    color :rgb(42, 42, 104);
+    font-size:large;
+}
+.content-area {
+    display: flex;
+    margin-top: -2px;
+    border-top: 2px solid #e5e9dc;
+    border-bottom: 1px solid #e5e9dc;
+    padding: 7px;
+}
+
+.main-area {
+    width: 60%;
+    padding-right: 40px;
+}
+
+.sidebar {
+    width :40%;
+    padding: 10px 20px;
+    background-color: #eeeee1;
+    font-size: 85%;
+    /* 13.92px 0.85% 11.83px */
+
+}
+
+.footer {
+    text-align: center;
+    color: #999;
+    font-size: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
