@@ -1,0 +1,10 @@
+.display-box{
+    width:100px;
+    height: 100px;
+    background-color: coral;
+    border-radius: 4px;
+}
+.display-block{
+    display:block;
+    /* 設定為區塊元素 */
+}
