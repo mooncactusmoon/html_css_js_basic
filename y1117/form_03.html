@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data.</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="form-header">
+            <h1>Personal Data&nbsp;&nbsp;<i class="fas fa-user-edit"></i> </h1>
+        </div>
+        <form action="" class="form-body">
+
+            <div class="form-group">
+                <label for="username"><i class="fas fa-portrait"></i>&nbsp;&nbsp;Name&nbsp;&nbsp;</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <table>
+                    <tr>
+                        <td><i class="fas fa-transgender-alt"></i>&nbsp;&nbsp;Gender&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="radio" id="men" name="gender" value="men">
+                            <label for="men">men</label><br>
+                            <input type="radio" id="women" name="gender" value="women">
+                            <label for="women">women</label><br>
+                            <input type="radio" id="third_gender" name="gender" value="third_gender">
+                            <label for="third_gender">Third gender</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label for="birthday"><i class="fas fa-birthday-cake"></i>&nbsp;&nbsp;Birthday&nbsp;&nbsp;</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope-open-text"></i>&nbsp;&nbsp;Email&nbsp;&nbsp;</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="department"><i class="fas fa-building"></i>&nbsp;&nbsp;Department&nbsp;&nbsp;</label>
+                <select name="department" id="department">
+                  <option value="a">A group</option>
+                  <option value="b">B group</option>
+                  <option value="c">C group</option>
+                  <option value="d">D group</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p><i class="fas fa-laptop-house"></i>&nbsp;&nbsp;Expertise&nbsp;&nbsp;</p>
+                <input type="checkbox" id="html" name="expertise[]" value="html">
+                <label for="hmtl"> HTML</label><br>
+                <input type="checkbox" id="css" name="expertise[]" value="css">
+                <label for="css"> CSS</label><br>
+                <input type="checkbox" id="js" name="expertise[]" value="js">
+                <label for="js"> Javascript</label><br>
+                <input type="checkbox" id="php" name="expertise[]" value="php">
+                <label for="php"> PHP</label><br>
+                <input type="checkbox" id="other" name="expertise[]" value="other">
+                <label for="other">Other<input type="text"></label>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-primary" type="submit">Submit<i class="fas fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- jqurey js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+</html>
