@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Data.</title>
+    <title>修改員工資料</title>
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -16,66 +16,27 @@
 </head>
 
 <body>
-    <div class="form-box">
-        <div class="form-header">
-            <h1>Personal Data&nbsp;&nbsp;<i class="fas fa-user-edit"></i> </h1>
-        </div>
-        <form action="" class="form-body">
-
-            <div class="form-group">
-                <label for="username"><i class="fas fa-portrait"></i>&nbsp;&nbsp;Name&nbsp;&nbsp;</label>
-                <input type="text" name="username" id="username">
-            </div>
-            <div class="form-group">
-                <table>
-                    <tr>
-                        <td><i class="fas fa-transgender-alt"></i>&nbsp;&nbsp;Gender&nbsp;&nbsp;</td>
-                        <td>
-                            <input type="radio" id="men" name="gender" value="men">
-                            <label for="men">men</label><br>
-                            <input type="radio" id="women" name="gender" value="women">
-                            <label for="women">women</label><br>
-                            <input type="radio" id="third_gender" name="gender" value="third_gender">
-                            <label for="third_gender">Third gender</label><br>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="form-group">
-                <label for="birthday"><i class="fas fa-birthday-cake"></i>&nbsp;&nbsp;Birthday&nbsp;&nbsp;</label>
-                <input type="date" name="birthday" id="birthday">
-            </div>
-            <div class="form-group">
-                <label for="email"><i class="fas fa-envelope-open-text"></i>&nbsp;&nbsp;Email&nbsp;&nbsp;</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="form-group">
-                <label for="department"><i class="fas fa-building"></i>&nbsp;&nbsp;Department&nbsp;&nbsp;</label>
-                <select name="department" id="department">
-                  <option value="a">A group</option>
-                  <option value="b">B group</option>
-                  <option value="c">C group</option>
-                  <option value="d">D group</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p><i class="fas fa-laptop-house"></i>&nbsp;&nbsp;Expertise&nbsp;&nbsp;</p>
-                <input type="checkbox" id="html" name="expertise[]" value="html">
-                <label for="hmtl"> HTML</label><br>
-                <input type="checkbox" id="css" name="expertise[]" value="css">
-                <label for="css"> CSS</label><br>
-                <input type="checkbox" id="js" name="expertise[]" value="js">
-                <label for="js"> Javascript</label><br>
-                <input type="checkbox" id="php" name="expertise[]" value="php">
-                <label for="php"> PHP</label><br>
-                <input type="checkbox" id="other" name="expertise[]" value="other">
-                <label for="other">Other<input type="text"></label>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-outline-primary" type="submit">Submit<i class="fas fa-paper-plane"></i></button>
-            </div>
-        </form>
+    <!-- container -->
+    <div class="container">
+         
+        <h3 class="text-center">修改員工資料</h3>
+        <!-- form -->
+        <form>
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-1 col-form-label text-center">Email</label>
+              <div class="col-sm-5">
+                <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+              </div>
+                <label for="staticEmail" class="col-sm-1 col-form-label text-center">Email</label>
+                <div class="col-sm-5">
+                  <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+          </form>
+        <!-- form end -->
     </div>
+    <!-- container end -->
+    
 
     <!-- jqurey js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
