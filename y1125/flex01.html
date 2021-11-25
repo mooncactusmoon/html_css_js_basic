@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 主軸對齊 -->
+    <div class="d-flex justify-content-start">
+        <div class="box">A Lorem ipsum dolor sit amet.</div>
+        <div class="box">B Lorem ipsum dolor sit amet.</div>
+        <div class="box">C Lorem ipsum dolor sit amet.</div>
+    </div>
+    <div class="d-flex justify-content-end">
+        <!-- 加了overflow -->
+        <div class="box overflow-auto">A Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sapiente rem voluptatum voluptate asperiores illo ratione, sunt quis error dignissimos! Similique commodi obcaecati voluptatibus officiis provident ipsum beatae harum vel, possimus inventore debitis, quisquam repellendus recusandae a facilis in consequuntur distinctio at. Eos dicta ratione hic iusto suscipit ullam aliquid voluptatem natus. Suscipit corrupti similique eaque ducimus cupiditate architecto rem? Doloribus officia, cum optio aperiam distinctio nulla vero repellendus! Iusto sed iste quo ratione? Aspernatur ea odio sed laboriosam quia a soluta, deserunt incidunt velit ad tempore odit quos nostrum sapiente molestiae optio aperiam omnis veniam accusamus. Dolores, omnis vero?</div>
+        <div class="box">B Lorem ipsum dolor sit amet.</div>
+        <div class="box">C Lorem ipsum dolor sit amet.</div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
