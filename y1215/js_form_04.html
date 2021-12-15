@@ -9,12 +9,28 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="container ml-3 my-3">
+        <h1>公分及英吋換算</h1>
+        <div class="row">
+            <div class="col-6 ">
+
+                <label class="row" for="cm1">公分 : </label>
+                <input class="row" type="number" class="form-control" id="cm1" placeholder="Enter centimeter" name="cm1">
+            </div>
+            <div class="col-6 ">
+
+                <label class="row" for="inch1">英吋 : </label>
+                <input class="row" type="number" class="form-control mt-1" id="inch1" placeholder="Enter inch" name="inch1">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-5">
         <h2>公分換算英吋</h2>
         <form action="" id="myForm">
             <div class="form-group">
                 <label for="cm"></label>
-                <input type="text" class="form-control" id="cm" placeholder="請輸入公分" name="cm" required>
+                <input type="text" class="form-control" id="cm" placeholder="Enter centimeter" name="cm" required>
             </div>
             <button type="submit" class="btn btn-primary">我要換英吋</button>
         </form>
@@ -22,7 +38,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="text-danger" id="reault_inch">Result :  </p>
+                <h3 class="text-danger" id="reault_inch"></h3>
             </div>
         </div>
     </div>
@@ -34,7 +50,7 @@
         <form action="" id="myForm2">
             <div class="form-group">
                 <label for="inch"></label>
-                <input type="text" class="form-control" id="inch" placeholder="請輸入英寸" name="inch" required>
+                <input type="text" class="form-control" id="inch" placeholder="Enter inch" name="inch" required>
             </div>
             <button type="submit" class="btn btn-primary">我要換公分</button>
         </form>
@@ -42,7 +58,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="text-danger" id="reault_cm">Result :  </p>
+                <h3 class="text-danger" id="reault_cm"></h3>
             </div>
         </div>
     </div>
