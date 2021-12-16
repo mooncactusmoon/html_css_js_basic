@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲料試算表 card 版</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .card{
+
+            transition: all .3s ease-out;
+        }
+        .card:hover{
+            box-shadow: 4px 3px 5px 1px rgba(0, 0, 0, 0.2);
+        }
+        .d{
+            width: 50px;
+            height:10px;
+            margin:10px auto;
+            border-radius: 5px;
+            transition: all .5s ease-out;
+        }
+        .card:hover .d{
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5 text-center">
+        <h2>飲料試算表</h2>
+        <div class="card-deck mt-3">
+
+            <div class="card bg-light border-info" style="width:400px">
+                <img class="card-img-top rounded p-2" src="./img/f.jpg" alt="Card image" width="300px" height="300px">
+                <div class="card-body">
+                    <h4 class="card-title">花茶</h4>
+                    <div class="d bg-info"></div>
+                    <p class="card-text text-primary">每杯售價 : 500 NT</p>
+                    <input type="number" value="0" id="flower" name="flower" min="0" class="text-center">
+                </div>
+            </div>
+
+            <div class="card bg-light border-info" style="width:400px">
+                <img class="card-img-top rounded p-2" src="./img/c.jpg" alt="Card image" width="300px" height="300px">
+                <div class="card-body">
+                    <h4 class="card-title">咖啡</h4>
+                    <div class="d bg-info"></div>
+                    <p class="card-text text-primary">每杯售價 : 120 NT</p>
+                    <input type="number" value="0" id="coffee" name="coffee" min="0" class="text-center">
+                </div>
+            </div>
+
+            <div class="card bg-light border-info" style="width:400px">
+                <img class="card-img-top rounded p-2" src="./img/j.jpg" alt="Card image" width="300px" height="300px">
+                <div class="card-body">
+                    <h4 class="card-title">珍奶</h4>
+                    <div class="d bg-info"></div>
+                    <p class="card-text text-primary">每杯售價 : 87 NT</p>
+                    <input type="number" value="0" id="jmike" name="jmike" min="0" class="text-center">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row w-75 mx-auto my-3">
+            <button id="sub_btn" class="btn btn-info col-12">送出</button>
+        </div>
+
+        <!-- alert -->
+
+        <div class="row w-75 mx-auto">
+            <div class="col-12">
+                <div id="total_text">
+                    <!-- 品項 : 價位 * 數量 -> 加總 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- alert end -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+
+    <script src="./js/js03.js"></script>
+</body>
+
+</html>
